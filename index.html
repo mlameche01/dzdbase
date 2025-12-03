@@ -1,67 +1,77 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Wed Kniss</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WED KNISS</title>
 
-    <style>
-        body {
-            background: #111;
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 20px;
-        }
+  <style>
+    /* ---- MASQUER LE LOW LIQUIDITY SANS CHANGER LE RESTE ---- */
+    .low-liquidity,
+    .gts-LowLiquidityBanner,
+    div[class*="liquidity"],
+    span[class*="liquidity"] {
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0 !important;
+      height: 0 !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  </style>
 
-        /* LOGO */
-        .logo {
-            width: 180px;
-            margin: 20px auto;
-            display: block;
-        }
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vladocar/box-shadows/dist/box-shadows.min.css">
+  <link rel="icon" type="image/png"
+    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAUVBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////8wl6RdAAAAHXRSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRwciP0xAAAAv0lEQVQY05WPSRLDIAxEXxBBEUQ963T//7VbZSEuxsjjlHzvEihQ/HUkNzxaz2YsmiVjCwXTlzAIXazhbugzuDUFcPRl1BDpRP70dNDOEPxjoMnIKh4j/wcgUp3NEPoPFcAckU4iigFsMghvYDn8ApXgHFqRSbVSSMzdg3NofM8JrIoVNewc19hXtOD87mpy4V/mQJu1WDVYj1WFJsbgx5caX5/C/PObbIVdQydb9h9NP7VDaRao7IhiHBpjz2uVH54camzatoNgtrENcGukdxbYF9bAA+EMF4iAfDdcAAAAASUVORK5CYII=">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #222;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
 
-        /* MASQUER L’INDICATEUR “LOW LIQUIDITY” DE GECKOTERMINAL */
-        /* Ces classes sont utilisées par GeckoTerminal dans toutes les intégrations */
+    .container {
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
 
-        .low-liquidity,
-        .lowLiquidity,
-        .LowLiquidity,
-        .gts-LowLiquidityBanner,
-        .gts-low-liquidity-banner,
-        div[class*="liquidity"],
-        span[class*="liquidity"] {
-            display: none !important;
-            visibility: hidden !important;
-            opacity: 0 !important;
-            height: 0 !important;
-            padding: 0 !important;
-            margin: 0 !important;
-        }
+    .title {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
 
-        iframe {
-            width: 100%;
-            height: 820px;
-            border: none;
-            border-radius: 12px;
-            overflow: hidden;
-        }
-    </style>
+    iframe {
+      width: 100%;
+      height: 700px;
+      border: none;
+      border-radius: 10px;
+    }
+  </style>
+
 </head>
 
 <body>
 
-    <!-- TON LOGO DZD -->
-    <img src="logo-dzd.png" alt="Logo DZD" class="logo">
+  <div class="container">
 
-    <h2>Wed Kniss</h2>
+    <!-- ---- AJOUT DU LOGO SANS CHANGER LE RENDU ---- -->
+    <img src="logo-dzd.png" alt="Logo DZD" style="width:140px; margin-top:10px;">
 
-    <!-- WIDGET GECKOTERMINAL -->
-    <iframe 
-        src="https://www.geckoterminal.com/base/pools/0x2d9c0f2426e0077a8d285ddfb78881668867e5ea?embed=1&info=0&swaps=1&volume=0&sparkline=1"
-        loading="lazy">
-    </iframe>
+    <div class="title">WED KNISS</div>
+
+    <iframe
+      src="https://www.geckoterminal.com/base/pools/0x2d9c0f2426e0077a8d285ddfb78881668867e5ea?embed=1&info=0&swaps=1&volume=0&sparkline=1"
+      loading="lazy"></iframe>
+
+  </div>
 
 </body>
-</html>
 
+</html>
